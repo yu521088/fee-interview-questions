@@ -1,7 +1,12 @@
 ## HTML问题 ##
 1. `doctype（文档类型）`的作用是什么？
+      告诉浏览器页面使用的HTML版本
 2. 浏览器标准模式和怪异模式之间的区别是什么？
-3. 说说HTML5新增了哪些标签，移除了哪些？
+      标准模式会以标准模式解释页面，怪癖模式则以兼容模式解释老的页面。
+3. 说说HTML5有那些新特性，移除了哪些元素？
+      * HTML5 现在已经不是 SGML 的子集，主要是关于图像，位置，存储，多任务等功能的增加。
+      * canvas, video, audio, localStorage, sessionStorage, 语义化标签, 表单控件
+      * 移除了纯表现的元素：basefont，big，center，font, s，strike，tt，u；对可用性能产生负面影响的元素：frame，frameset，noframes；
 4. iframe有那些缺点？
       iframe会阻塞主页面的Onload事件；
       iframe是最费资源的元素；
