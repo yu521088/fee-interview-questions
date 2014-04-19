@@ -1,3 +1,5 @@
+** 欢迎添加 **
+
 ## HTML问题 ##
 1. `doctype（文档类型）`的作用是什么？
       告诉浏览器页面使用的HTML版本
@@ -16,7 +18,7 @@
 ## JavaScript问题 ##
 ### 代码问题 ###
 1. specify('hello world') // => 'h e l l o   w o r l d' 实现specify函数
-   
+   A: 
     ````
     function specify(s){
       return s.split('').join(' ');
@@ -31,6 +33,7 @@
     ````
 
 2. 实现一个log()方法，接收多个参数，在输出前添加"(APP) "
+   A: 
     ````
     function log(){
 
@@ -60,7 +63,38 @@
     var func = User.getCount;
     console.log(func());
     ````
-    输出1和undefined
+   A: 输出1和undefined
+
+4. 数组求合集，要求时间复杂度最小
+    ````
+      var first = ['a','b','c','d','e'], second = ['a','b','c'], third = ['c','d','e'], fourth = ['d','e','f'] 
+    ````
+   A: 第一种方法
+    ````
+      var result = {};
+      var heji = [];
+      var whole = first.concat(second, third, fourth);
+      for(var i = whole.length-1; i >= 0; i--){
+            var part = whole[i];
+            result[part]?(result[part] += 1) : result[part] = 1;
+      }
+      for(var j in result){
+            j.length == 4 ? heji.push(j):;
+      }
+      时间复杂度: n*m*2 (n为数组个数，m为数组长度)
+    ````
+      第二种方法，假设知道数组的所有元素
+    ````
+      var whole = first.concat(second, third, fourth).join('');
+      var heji = [];
+      var tpl = ['a','b','c','d','e','f'];
+      for(var i = tpl.length-1 ; i >= 0 ; i--){
+            var test = whole;
+            test = test.replace(tpl[0],'*')replace(/[^\*]/gi,'');
+            test.length == 4 ? heji.push(tpl[i]);
+      }
+      时间复杂度: n*m
+    ````
 
 ### 描述问题 ###
 1. 访问对象属性的两种方法。
