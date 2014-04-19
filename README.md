@@ -1,40 +1,41 @@
 **欢迎添加**
+------
 
 ## HTML问题 ##
 1. `doctype（文档类型）`的作用是什么？
-      告诉浏览器页面使用的HTML版本
+      <br/>告诉浏览器页面使用的HTML版本
 2. 浏览器标准模式和怪异模式之间的区别是什么？
-      标准模式会以标准模式解释页面，怪癖模式则以兼容模式解释老的页面。
+      <br/>标准模式会以标准模式解释页面，怪癖模式则以兼容模式解释老的页面。
 3. 说说HTML5有那些新特性，移除了哪些元素？
       * HTML5 现在已经不是 SGML 的子集，主要是关于图像，位置，存储，多任务等功能的增加。
       * canvas, video, audio, localStorage, sessionStorage, 语义化标签, 表单控件
       * 移除了纯表现的元素：basefont，big，center，font, s，strike，tt，u；对可用性能产生负面影响的元素：frame，frameset，noframes；
 4. iframe有那些缺点？
-      iframe会阻塞主页面的Onload事件；
-      iframe是最费资源的元素；
+      <br/>iframe会阻塞主页面的Onload事件；
+      <br/>iframe是最费资源的元素；
 5. 请描述一下 cookies，sessionStorage 和 localStorage 的区别？
 6. 内元素有哪些？块级元素有哪些？什么是可替换元素？什么是不可替换元素？
 
 ## JavaScript问题 ##
 ### 代码问题 ###
 1. specify('hello world') // => 'h e l l o   w o r l d' 实现specify函数
-   A: 
-    ````
+   <br/>A: 
+    ````javascript
     function specify(s){
       return s.split('').join(' ');
     }
     ````
    如果输出'h e l l o w o r l d'
    
-    ````
+    ````javascript
     function specify(s){
       return s.replace(' ', '').split('').join(' ');
     }
     ````
 
 2. 实现一个log()方法，接收多个参数，在输出前添加"(APP) "
-   A: 
-    ````
+   <br/>A: 
+    ````javascript
     function log(){
 
       var args = Array.prototype.slice.call(arguments);
@@ -47,7 +48,7 @@
     ````
     
 3. 上下文理解
-    ````
+    ````javascript
     var User = {
 
       count: 1,
@@ -66,11 +67,11 @@
    A: 输出1和undefined
 
 4. 数组求合集，要求时间复杂度最小
-    ````
+    ````javascript
       var first = ['a','b','c','d','e'], second = ['a','b','c'], third = ['c','d','e'], fourth = ['d','e','f'] 
     ````
    A: 第一种方法
-    ````
+    ````javascript
       var result = {};
       var heji = [];
       var whole = first.concat(second, third, fourth);
@@ -84,7 +85,7 @@
       时间复杂度: n*m*2 (n为数组个数，m为数组长度)
     ````
       第二种方法，假设知道数组的所有元素
-    ````
+    ````javascript
       var whole = first.concat(second, third, fourth).join('');
       var heji = [];
       var tpl = ['a','b','c','d','e','f'];
@@ -129,8 +130,8 @@
 3. 列举不同的清除浮动的技巧，并指出它们各自适用的使用场景。
 4. 讨论CSS hacks，条件引用或者其他。
 5. link和@import的区别。
-      link属于XHTML标签，而@import是CSS标签;
-      页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;
+      * link属于XHTML标签，而@import是CSS标签;
+      * 页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;
 6. 你用过媒体查询，或针对移动端的布局/CSS 吗？
 7. 使用 CSS 预处理器的优缺点有哪些？(SASS，Compass，Stylus，LESS)
 8. 解释下浏览器是如何解析 CSS 选择器的？
