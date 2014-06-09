@@ -14,7 +14,15 @@
       <br/>iframe会阻塞主页面的Onload事件；
       <br/>iframe是最费资源的元素；
 5. 请描述一下 cookies，sessionStorage 和 localStorage 的区别？
-6. 内元素有哪些？块级元素有哪些？什么是可替换元素？什么是不可替换元素？
+      * cookie在浏览器和服务器间来回传递。 sessionStorage和localStorage不会
+      * sessionStorage和localStorage的存储空间更大；
+      * sessionStorage和localStorage有更多丰富易用的接口；
+      * sessionStorage和localStorage各自独立的存储空间；
+6. 行内元素有哪些？块级元素有哪些？什么是可替换元素？什么是不可替换元素？
+      1 CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值， 比如div默认display属性值为“block”，成为“块级”元素； span默认display属性值为“inline”，是“行内”元素。
+      2 行内元素有：a b span img input select strong（强调的语气）
+      3 块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p
+      4 知名的空元素： <br> <hr> <img> <input> <link> <meta> 鲜为人知的是： <area> <base> <col> <command> <embed> <keygen> <param> <source> <track> <wbr>
 
 ## JavaScript问题 ##
 ### 代码问题 ###
