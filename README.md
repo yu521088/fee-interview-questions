@@ -133,6 +133,7 @@
 25. 如何编写高性能的Javascript？
 26. JSONP的实现机制是怎么样的？
 27. WebSocket的实现机制是什么，与现有的解决方案对比的优缺点？
+28. 从输入url到显示网页，后台发生了什么？   [SF](http://sfau.lt/bNcdAd) [cnblog](http://www.cnblogs.com/rollenholt/archive/2012/03/23/2414345.html)
 
 ## CSS相关 ##
 1. 描述下 “reset” CSS 文件的作用和使用它的好处。
