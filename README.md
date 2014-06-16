@@ -24,6 +24,9 @@
       3 块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p
       4 知名的空元素： <br> <hr> <img> <input> <link> <meta> 鲜为人知的是： <area> <base> <col> <command> <embed> <keygen> <param> <source> <track> <wbr>
 
+      替换元素就是浏览器根据元素的标签和属性，来决定元素的具体显示内容。如img，input
+      不可替换元素，即其内容直接表现给用户端。如p
+
 ## JavaScript问题 ##
 ### 代码问题 ###
 1. specify('hello world') // => 'h e l l o   w o r l d' 实现specify函数
