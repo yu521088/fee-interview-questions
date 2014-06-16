@@ -19,13 +19,17 @@
       * sessionStorage和localStorage有更多丰富易用的接口；
       * sessionStorage和localStorage各自独立的存储空间；
 6. 行内元素有哪些？块级元素有哪些？什么是可替换元素？什么是不可替换元素？
-    1 CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值， 比如div默认display属性值为“block”，成为“块级”元素； span默认display属性值为“inline”，是“行内”元素。
-    2 行内元素有：a b span img input select strong（强调的语气）
-    3 块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p
-    4 知名的空元素： br hr img input link meta 鲜为人知的是： area base col command embed keygen param source track wbr
+
+      1 CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值， 比如div默认display属性值为“block”，成为“块级”元素； span默认display属性值为“inline”，是“行内”元素。
+
+      2 行内元素有：a b span img input select strong（强调的语气）
+      
+      3 块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p
+      
+      4 知名的空元素： br hr img input link meta 鲜为人知的是： area base col command embed keygen param source track wbr
   
-    替换元素就是浏览器根据元素的标签和属性，来决定元素的具体显示内容。如img，input
-    不可替换元素，即其内容直接表现给用户端。如p
+      替换元素就是浏览器根据元素的标签和属性，来决定元素的具体显示内容。如img，input
+      不可替换元素，即其内容直接表现给用户端。如p
 
 ## JavaScript问题 ##
 ### 代码问题 ###
