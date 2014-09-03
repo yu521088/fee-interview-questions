@@ -137,6 +137,7 @@
 26. JSONP的实现机制是怎么样的？
 27. WebSocket的实现机制是什么，与现有的解决方案对比的优缺点？
 28. 从输入url到显示网页，后台发生了什么？   [SF](http://sfau.lt/bNcdAd) [cnblog](http://www.cnblogs.com/rollenholt/archive/2012/03/23/2414345.html)
+29. 数组的排序怎么实现？A: 用sort方法，传递一个function，升序则返回小于0，降序则返回大于0
 
 ## CSS相关
 0. CSS 基础选择器
