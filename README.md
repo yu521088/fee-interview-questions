@@ -8,7 +8,7 @@
       <br/>标准模式会以标准模式解释页面，怪癖模式则以兼容模式解释老的页面。
 3. 说说HTML5有那些新特性，移除了哪些元素？
       * HTML5 现在已经不是 SGML 的子集，主要是关于图像，位置，存储，多任务等功能的增加。
-      * canvas, video, audio, localStorage, sessionStorage, 语义化标签, 表单控件
+      * canvas, video, audio, localStorage, sessionStorage, Geolocation,APP Cache,web worker, 语义化标签, 表单控件
       * 移除了纯表现的元素：basefont，big，center，font, s，strike，tt，u；对可用性能产生负面影响的元素：frame，frameset，noframes；
 4. iframe有那些缺点？
       <br/>iframe会阻塞主页面的Onload事件；
@@ -108,7 +108,7 @@
       时间复杂度: n*m
     ````
 
-### 描述问题 ###
+### 描述问题
 1. 访问对象属性的两种方法。
 2. 如何判断一个属性是否是对象的自有属性？
 3. 遍历对象属性用什么方法？(for in)
@@ -138,7 +138,9 @@
 27. WebSocket的实现机制是什么，与现有的解决方案对比的优缺点？
 28. 从输入url到显示网页，后台发生了什么？   [SF](http://sfau.lt/bNcdAd) [cnblog](http://www.cnblogs.com/rollenholt/archive/2012/03/23/2414345.html)
 
-## CSS相关 ##
+## CSS相关
+0. CSS 基础选择器
+1. 列举你知道的重要的CSS Hack( IE8: \9, IE7: *, IE6: _)
 1. 描述下 “reset” CSS 文件的作用和使用它的好处。
 2. 解释下浮动和它的工作原理。
 3. 列举不同的清除浮动的技巧，并指出它们各自适用的使用场景。
@@ -151,5 +153,10 @@
 8. 解释下浏览器是如何解析 CSS 选择器的？
 9. 解释一下你对盒模型的理解，以及如何在 CSS 中告诉浏览器使用不同的盒模型来渲染你的布局。
 10. CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3新增伪类有那些？
-11. CSS3有哪些新特性？
 12. css定义的权重
+11. CSS3有哪些新特性？
+13. CSS3动画在移动端的性能
+
+## 综合问题
+1. 跨域访问的实现
+2. 邮件数据统计，获取邮件的浏览量
