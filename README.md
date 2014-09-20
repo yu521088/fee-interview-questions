@@ -15,7 +15,7 @@
       <br/>iframe是最费资源的元素；
 5. 请描述一下 cookies，sessionStorage 和 localStorage 的区别？
       * cookie在浏览器和服务器间来回传递。 sessionStorage和localStorage不会
-      * sessionStorage和localStorage的存储空间更大；
+      * sessionStorage和localStorage的存储空间更大(>4M)，cookie只有4K；
       * sessionStorage和localStorage有更多丰富易用的接口；
       * sessionStorage和localStorage各自独立的存储空间；
 6. 行内元素有哪些？块级元素有哪些？什么是可替换元素？什么是不可替换元素？
