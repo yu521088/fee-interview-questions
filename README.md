@@ -113,7 +113,7 @@
 2. 如何判断一个属性是否是对象的自有属性？ ( hasOwnProperty )
 3. 遍历对象属性用什么方法？(for in)
 4. 谈谈你喜欢的开发环境。(例如操作系统，编辑器，浏览器，工具等等。)
-5. 你能描述一下渐进增强和优雅降级之间的不同吗?
+5. 你能描述一下渐进增强和优雅降级之间的不同吗? ([cnblogs](http://www.cnblogs.com/mofish/p/3822879.html))
 6. 解释下事件代理。
 7. 什么是哈希表？
 8. null和undefined的区别是什么？ (null是定义一个变量，它的值未定；undefined是不知道有这个变量)
@@ -140,9 +140,9 @@
 29. 数组的排序怎么实现？A: 用sort方法，传递一个function，升序则返回小于0，降序则返回大于0
 
 ## CSS相关
-0. CSS 基础选择器
+0. CSS 基础选择器 ( +: the element right behind first element; ~: the sibling elements after first element )
 1. 列举你知道的重要的CSS Hack( IE8: \9, IE7: *, IE6: _)
-1. 描述下 “reset” CSS 文件的作用和使用它的好处。
+1. 描述下 “reset” CSS 文件的作用和使用它的好处。(可以消除浏览器默认样式的影响)
 2. 解释下浮动和它的工作原理。
 3. 列举不同的清除浮动的技巧，并指出它们各自适用的使用场景。
     1. 给父元素加overflow:hidden，迫使父元素包含其浮动的子元素
@@ -156,13 +156,14 @@
       * 页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;
 6. 你用过媒体查询，或针对移动端的布局/CSS 吗？ (  @media (max-width: 1200px) and (min-width: 700px)  )
 7. 使用 CSS 预处理器的优缺点有哪些？(SASS，Compass，Stylus，LESS) 
-8. 解释下浏览器是如何解析 CSS 选择器的？
-9. 解释一下你对盒模型的理解，以及如何在 CSS 中告诉浏览器使用不同的盒模型来渲染你的布局。
+8. 解释下浏览器是如何解析 CSS 选择器的？(从右往左解析)
+9. 解释一下你对盒模型的理解，以及如何在 CSS 中告诉浏览器使用不同的盒模型来渲染你的布局。(box-sizing:padding-box/content-box/margin-box)
 10. CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3新增伪类有那些？
-12. css定义的权重
-11. CSS3有哪些新特性？
+12. css定义的权重 (ID > Class > tag > * > inherit)
+11. CSS3有哪些新特性？ (动画，渐变，透明度，圆角，阴影，字体，多重背景，)
 13. CSS3动画在移动端的性能
 14. 垂直居中已知高度的元素(使用负边距)
+15. CSS3伪元素有那些？(::after, ::before, ::selection, ::first-letter, ::first-line等)
 
 ## 综合问题
 1. 跨域访问的实现
