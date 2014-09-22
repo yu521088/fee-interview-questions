@@ -166,7 +166,7 @@
 15. CSS3伪元素有那些？(::after, ::before, ::selection, ::first-letter, ::first-line等)
 
 ## 综合问题
-1. 跨域访问的实现
+1. 跨域访问的实现   JSONP, [iframe](http://www.cnblogs.com/pigtail/archive/2013/01/24/2875310.html)
 2. 邮件数据统计，获取邮件的浏览量
 3. 兼容性处理
     1. JS: console, JSON, Array.prototype.forEach()
