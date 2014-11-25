@@ -149,6 +149,9 @@
 
 #### 插件编写
 
+- 必须提供JS与Data-api两种使用方式
+- 必须提供Constructor.DEFAULT修改插件的默认配置
+
 ## III 从2.x迁移到3.x
 
 参照[Bootstrap官方迁移指南](http://getbootstrap.com/migration/)进行迁移
