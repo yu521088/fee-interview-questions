@@ -171,3 +171,6 @@
 3. 兼容性处理
     1. JS: console, JSON, Array.prototype.forEach()
     2. CSS: \9(IE8), *(IE7), _(IE6)
+4. HTTP请求头和响应头的内容
+    1. accept, accept-encoding, connection, cache-control, cookie, host, pragma, user-agent, referer
+    2. connection, cache-control, content-encoding, content-type, date, expires, server
