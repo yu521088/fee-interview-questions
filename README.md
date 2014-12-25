@@ -123,7 +123,7 @@
 12. 研究过jQuery源码吗？
 13. 函数表达式和函数声明的区别 (函数声明会在执行前被解析，因此定义在代码的任意位置都可用)
 14. 变量的作用域并解释变量声明提升。(函数作用域。 所有变量都会被提升到作用域的顶端)
-15. "attribute" 和 "property" 的区别是什么？
+15. "attribute" 和 "property" 的区别是什么？(.property, getAttribute, getAttribute('checked') == 'checked', ele.checked == true)
 16. 请指出 document load 和 document ready 两个事件的区别。
 17. == 和 === 有什么不同？ (值等和全等)
 18. 请解释一下 JavaScript 的同源策略。 (脚本只能访问同源的页面属性和资源，同源指协议，地址和端口相同)
