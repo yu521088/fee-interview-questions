@@ -18,10 +18,12 @@
       * sessionStorage和localStorage的存储空间更大(>4M)，cookie只有4K；
       * sessionStorage和localStorage有更多丰富易用的接口；
       * sessionStorage和localStorage各自独立的存储空间；
+      * sessionStorage的数据在浏览器开着时会一直存在；
+      * localStorage的数据会一直存在，即使在浏览器被关闭以后；
 6. 行内元素有哪些？块级元素有哪些？什么是可替换元素？什么是不可替换元素？
       1. CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值， 比如div默认display属性值为“block”，成为“块级”元素； span默认display属性值为“inline”，是“行内”元素。
       2. 行内元素有：a b span img input select strong（强调的语气）
-      3. 块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p
+      3. 块级元素有：div ul ol li dl dt dd h1… p
       4. 知名的空元素： br hr img input link meta 鲜为人知的是： area base col command embed keygen param source track wbr
   
       替换元素就是浏览器根据元素的标签和属性，来决定元素的具体显示内容。如img，input
@@ -79,7 +81,7 @@
 
 4. 数组求合集，要求时间复杂度最小
     ````javascript
-      var first = ['a','b','c','d','e'], second = ['a','b','c'], third = ['c','d','e'], fourth = ['d','e','f'] 
+      var first = ['a','b','c','d','e'], second = ['a','b','c'], third = ['a','c','d','e'], fourth = ['a','d','e','f'] 
     ````
    A: 第一种方法
     ````javascript
@@ -101,9 +103,9 @@
       var heji = [];
       var tpl = ['a','b','c','d','e','f'];
       for(var i = tpl.length-1 ; i >= 0 ; i--){
-            var test = whole;
-            test = test.replace(tpl[0],'*')replace(/[^\*]/gi,'');
-            test.length == 4 ? heji.push(tpl[i]);
+            var test = whole.slice();
+            test = test.replace(new RegExp(tpl[i],'gi'),'*').replace(/[^\*]/gi,'');
+            test.length == 4 && heji.push(tpl[i]);
       }
       时间复杂度: n*m
     ````
