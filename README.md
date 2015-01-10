@@ -130,7 +130,7 @@
 17. == 和 === 有什么不同？ (值等和全等)
 18. 请解释一下 JavaScript 的同源策略。 (脚本只能访问同源的页面属性和资源，同源指协议，地址和端口相同)
 19. 什么是 "use strict"; ? 使用它的好处和坏处分别是什么？
-20. 函数的参数arguments是数组吗？怎么把它转化成标准数组？(类数组， Array.prototype.split(arguments) )
+20. 函数的参数arguments是数组吗？怎么把它转化成标准数组？(类数组， Array.prototype.slice.call(arguments) )
 21. eval()的作用是什么？为什么不推荐使用？
 22. 事件、IE与火狐的事件机制有什么区别？ 如何阻止冒泡？
 23. "use strict";是什么意思 ? 使用它的好处和坏处分别是什么？
@@ -159,8 +159,11 @@
 6. 你用过媒体查询，或针对移动端的布局/CSS 吗？ (  @media (max-width: 1200px) and (min-width: 700px)  )
 7. 使用 CSS 预处理器的优缺点有哪些？(SASS，Compass，Stylus，LESS) 
 8. 解释下浏览器是如何解析 CSS 选择器的？(从右往左解析)
-9. 解释一下你对盒模型的理解，以及如何在 CSS 中告诉浏览器使用不同的盒模型来渲染你的布局。(box-sizing:padding-box/content-box/margin-box)
-10. CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3新增伪类有那些？
+9. 解释一下你对盒模型的理解，以及如何在 CSS 中告诉浏览器使用不同的盒模型来渲染你的布局。(box-sizing:content-box/border-box)
+10. CSS 选择符有哪些？哪些属性可以继承？
+11. CSS 优先级算法如何计算？(按权重计算，如果权重相同，后出现的覆盖先出现的)
+11. CSS 伪类有哪些？(love, :focus, :first-child)
+11. CSS3 新增伪类有那些(:nth-child, :nth-last-child, :nth-of-type, :first-of-type, :last-of-type, :checked, :enabled, :disabled, :target, :empty)？
 12. css定义的权重 (ID > Class > tag > * > inherit)
 11. CSS3有哪些新特性？ (动画，渐变，透明度，圆角，阴影，字体，多重背景，)
 13. CSS3动画在移动端的性能
