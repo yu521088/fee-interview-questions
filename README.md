@@ -170,6 +170,7 @@
 14. 垂直居中已知高度的元素(使用负边距)
 15. CSS3伪元素有那些？(::after, ::before, ::selection, ::first-letter, ::first-line等)
 16. CSS1/CSS2/CSS3有什么区别？(CSS2比CSS1新增了选择器，定位；CSS3比CSS2新增了选择器，动画，圆角，阴影，多重背景等)
+17. 如何居中浮动元素？(绝对定位+负边距)
 
 ## 综合问题
 1. 跨域访问的实现   JSONP, [iframe](http://www.cnblogs.com/pigtail/archive/2013/01/24/2875310.html)
